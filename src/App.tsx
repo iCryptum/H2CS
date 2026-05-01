@@ -34,30 +34,30 @@ export default function App() {
       {/* HEADER */}
       <header className="h-[60px] shrink-0 border-b border-gold-muted flex items-center justify-between px-4 md:px-10 bg-bg/80 backdrop-blur-md z-50">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 md:gap-3">
             <div className="relative group flex items-center justify-center">
-              <img src="https://i.ibb.co/dJf5st7W/H2CS.png" alt="H2CS" className="h-8 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement?.querySelector('.fallback')?.classList.remove('hidden') }} />
+              <img src="https://i.ibb.co/dJf5st7W/H2CS.png" alt="H2CS" className="h-8 md:h-9 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement?.querySelector('.fallback')?.classList.remove('hidden') }} />
               <div className="hidden fallback w-8 h-8 border border-gold rounded flex items-center justify-center text-[10px] text-gold font-bold">H2CS</div>
             </div>
             <div className="relative group flex items-center justify-center">
-              <img src="https://i.ibb.co/SDZwhXXz/Cryptum.png" alt="Cryptum" className="h-8 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement?.querySelector('.fallback')?.classList.remove('hidden') }} />
-              <div className="hidden fallback w-8 h-8 border border-gold rounded flex items-center justify-center text-[10px] text-gold font-bold">CRYP</div>
-            </div>
-            <div className="relative group flex items-center justify-center ml-2">
-              <img src="https://i.ibb.co/4ZRKmvJr/Halo2.png" alt="Halo 2" className="h-8 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img src="https://i.ibb.co/SDZwhXXz/Cryptum.png" alt="Cryptum" className="h-10 md:h-11 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement?.querySelector('.fallback')?.classList.remove('hidden') }} />
+              <div className="hidden fallback w-10 h-10 border border-gold rounded flex items-center justify-center text-[10px] text-gold font-bold">CRYP</div>
             </div>
           </div>
           <span className="text-[1.1rem] md:text-[1.2rem] font-light tracking-[2px] text-gold uppercase hidden sm:block">
             H2CS by Cryptum
           </span>
         </div>
+        <div className="relative group flex items-center justify-center">
+          <img src="https://i.ibb.co/4ZRKmvJr/Halo2.png" alt="Halo 2" className="h-8 md:h-9 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+        </div>
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="flex-1 flex flex-col md:grid md:grid-cols-[1.4fr_1fr] gap-6 p-4 md:p-6 lg:p-8 xl:px-10 overflow-hidden min-h-0 bg-bg">
+      <main className="flex-1 flex flex-col md:grid md:grid-cols-[1.4fr_1fr] gap-6 p-4 md:p-6 lg:p-8 xl:px-10 overflow-y-auto md:overflow-hidden min-h-0 bg-bg">
         
         {/* RANKINGS TABLE */}
-        <section className="bg-surface border border-gold-muted rounded-lg flex flex-col overflow-hidden h-full min-h-0">
+        <section className="bg-surface border border-gold-muted rounded-lg flex flex-col overflow-hidden h-[65vh] shrink-0 md:shrink md:h-full min-h-[400px] md:min-h-0">
           {/* Controls */}
           <div className="p-4 border-b border-gold-muted flex flex-col gap-3 shrink-0">
             <div className="relative">
@@ -162,7 +162,7 @@ export default function App() {
               <img 
                 src="https://i.ibb.co/qLymcQcw/H2.jpg" 
                 alt="Halo 2 Spartan" 
-                className="absolute inset-0 w-full h-full object-cover object-center opacity-40 mix-blend-luminosity hover:opacity-60 transition-opacity duration-500"
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-40 mix-blend-luminosity hover:opacity-60 transition-opacity duration-500"
                 onError={(e) => { e.currentTarget.style.display = 'none' }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
@@ -171,7 +171,7 @@ export default function App() {
             </div>
             
             <h3 className="text-gold uppercase text-[0.9rem] font-semibold tracking-[1px] mb-2 flex items-center gap-2">
-              Halo 2 & Project Cartographer
+              Halo 2 Project Cartographer
             </h3>
             <p className="text-text-dim text-[0.8rem] leading-[1.6]">
               Adaptación moderna de Halo 2 Vista. Lanzamiento original por Bungie en 2004 y H2V Team en 2007.
